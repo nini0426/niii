@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>倪潼 - 个人作品集</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      /* 颜色变量 */
+      --color-primary: #4B0082;
+      --color-secondary: #FFB6C1;
+      --color-accent: #98FF98;
+      --color-bg: #fff;
+      --color-bg-section: #f9f9f9;
+      --color-tag1: #FFB6C1;
+      --color-tag2: #98FF98;
+      --color-tag3: #DCD0FF;
+      --color-text: #222;
+      --color-text-light: #fff;
+      --color-border: #E5E7EB;
+      --shadow-main: 0px 10px 15px -3px rgba(0,0,0,0.1), 0px 4px 6px -4px rgba(0,0,0,0.1);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Roboto', Arial, sans-serif;
+      background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-accent) 100%);
+      color: var(--color-text);
+    }
+    .container {
+      max-width: 1440px;
+      margin: 0 auto;
+      background: var(--color-bg);
+      box-shadow: var(--shadow-main);
+      border-radius: 16px;
+      padding: 0 32px;
+    }
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 80px 0 64px 0;
+    }
+    .avatar {
+      width: 192px;
+      height: 192px;
+      border-radius: 50%;
+      border: 8px dashed var(--color-bg);
+      background: #fff url('niii/b1f7064e81ad2930ed21088297940ce7.png') center/cover no-repeat;
+      margin-bottom: 32px;
+      box-shadow: var(--shadow-main);
+    }
+    h1 {
+      font-size: 36px;
+      font-weight: bold;
+      color: var(--color-primary);
+      margin: 0 0 16px 0;
+    }
+    .subtitle {
+      font-size: 20px;
+      color: var(--color-primary);
+      margin-bottom: 16px;
+    }
+    .desc {
+      font-size: 16px;
+      color: var(--color-text);
+      margin-bottom: 8px;
+      text-align: center;
+      max-width: 700px;
+    }
+    section {
+      margin: 64px 0;
+      padding: 0 0 32px 0;
+    }
+    section h2 {
+      text-align: center;
+      font-size: 30px;
+      font-weight: bold;
+      color: var(--color-primary);
+      margin-bottom: 48px;
+    }
+    .skills, .experience, .portfolio {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 32px;
+      justify-content: center;
+    }
+    .card {
+      background: var(--color-bg-section);
+      border-radius: 16px;
+      box-shadow: var(--shadow-main);
+      padding: 32px;
+      width: 420px;
+      min-width: 280px;
+      flex: 1 1 320px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .card h3 {
+      font-size: 20px;
+      font-weight: bold;
+      color: var(--color-primary);
+      margin: 0 0 8px 0;
+      text-align: left;
+    }
+    .card p {
+      font-size: 16px;
+      color: var(--color-text);
+      margin: 0 0 8px 0;
+      text-align: left;
+    }
+    .tags {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: 8px;
+    }
+    .tag {
+      padding: 4px 12px;
+      border-radius: 9999px;
+      font-size: 14px;
+      color: var(--color-text-light);
+      background: var(--color-tag1);
+    }
+    .tag2 { background: var(--color-tag2); }
+    .tag3 { background: var(--color-tag3); }
+    .portfolio-img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 12px;
+      background: #eee;
+    }
+    .contact {
+      text-align: center;
+      margin: 48px 0 0 0;
+    }
+    .contact-info {
+      font-size: 16px;
+      color: var(--color-primary);
+      margin: 8px 0;
+    }
+    footer {
+      text-align: center;
+      color: var(--color-primary);
+      font-size: 16px;
+      padding: 32px 0 16px 0;
+      background: var(--color-bg-section);
+      border-radius: 0 0 16px 16px;
+      margin-top: 32px;
+    }
+    @media (max-width: 900px) {
+      .container { padding: 0 8px; }
+      .skills, .experience, .portfolio { flex-direction: column; gap: 24px; }
+      .card { width: 100%; min-width: unset; }
+    }
+    @media (max-width: 600px) {
+      header { padding: 32px 0 24px 0; }
+      .avatar { width: 120px; height: 120px; }
+      h1 { font-size: 24px; }
+      .subtitle { font-size: 16px; }
+      section h2 { font-size: 22px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="avatar"></div>
+      <h1>倪潼</h1>
+      <div class="subtitle">数字媒体艺术 | 在读大二学生</div>
+      <div class="desc">热爱艺术创作与绘画，擅长运用各类软件进行艺术创作，积极参与校内外项目比赛</div>
+    </header>
+    <section>
+      <h2>专业技能</h2>
+      <div class="skills">
+        <div class="card">
+          <h3>设计绘画</h3>
+          <img class="portfolio-img" src="niii/iii/8beba6476aa917b5679cfeb4b59007f7.png" alt="设计绘画">
+          <div class="tags">
+            <span class="tag">手绘</span>
+            <span class="tag tag2">插画</span>
+            <span class="tag tag3">创意</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3>软件应用</h3>
+          <img class="portfolio-img" src="niii/a176f4f8b240a6b28b4e5be03f810f65.png" alt="软件应用">
+          <div class="tags">
+            <span class="tag">Photoshop</span>
+            <span class="tag tag2">Illustrator</span>
+            <span class="tag tag3">After Effects</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3>UI 设计</h3>
+          <img class="portfolio-img" src="niii/4c490ca4085768ea32010917669415d3.png" alt="UI 设计">
+          <div class="tags">
+            <span class="tag">界面设计</span>
+            <span class="tag tag2">交互</span>
+            <span class="tag tag3">动效</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2>在校经历</h2>
+      <div class="experience">
+        <div class="card">
+          <h3>比赛经验</h3>
+          <p>2022.09 - 至今</p>
+          <p>活跃参与各类设计赛事，包括中国大学生广告艺术大赛（大广赛）、全国大学生数字艺术设计大赛（NCDA）、中国气象局创新设计大赛、"挑战杯"大学生创业大赛、"互联网+"大学生创新创业大赛、北京市大学生文化创意设计大赛以及雀巢创新设计大赛等多个高水平赛事。通过比赛积累了丰富的实战经验，培养了创新思维和团队协作能力。</p>
+        </div>
+        <div class="card">
+          <h3>校园实践</h3>
+          <p>校园媒体工作者 | 2022.09 - 至今</p>
+          <p>在院系宣传部担任核心成员，负责视觉设计和内容策划工作。同时在新媒体工作室担任设计师，参与制作多个院系重大活动的宣传物料，运营微信公众号，策划和制作原创内容，提升了院系新媒体平台的影响力和关注度。</p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2>个人作品集</h2>
+      <div class="portfolio">
+        <div class="card">
+          <img class="portfolio-img" src="niii/9fbbda6f6d88e982a978b96f7cc1f135.png" alt="雀巢杯包装设计">
+          <h3>雀巢杯包装设计</h3>
+          <p>大包装对开盒插画设计，两种独立小包装设计方案，融合品牌元素与创意表现</p>
+          <div class="tags">
+            <span class="tag">包装设计</span>
+            <span class="tag tag2">插画设计</span>
+            <span class="tag tag3">品牌设计</span>
+          </div>
+        </div>
+        <div class="card">
+          <img class="portfolio-img" src="niii/6e075ded1d340f9103ca02c8c55cd73c.jpg" alt="什刹海动态海报设计">
+          <h3>什刹海动态海报设计</h3>
+          <p>结合传统建筑元素与现代动态设计，展现北京古都风貌的创意海报作品</p>
+          <div class="tags">
+            <span class="tag">After Effects</span>
+            <span class="tag tag2">动态设计</span>
+            <span class="tag tag3">创意海报</span>
+          </div>
+        </div>
+        <div class="card">
+          <img class="portfolio-img" src="niii/6566de99be81d1e20b32e9a223e310ab.jpg" alt="数字建模设计">
+          <h3>数字建模设计</h3>
+          <p>将数字与甜品结合，创作出缤纷多彩的建模场景</p>
+          <div class="tags">
+            <span class="tag">TypeScript</span>
+            <span class="tag tag2">Python</span>
+            <span class="tag tag3">ECharts</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact">
+      <h2>联系方式</h2>
+      <div class="contact-info">邮箱：2241706720@qq.com</div>
+      <div class="contact-info">电话：+86 18382800426</div>
+    </section>
+    <footer>
+      © 2024 倪潼. All rights reserved.
+    </footer>
+  </div>
+</body>
+</html> 
